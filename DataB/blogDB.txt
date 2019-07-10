@@ -1,4 +1,4 @@
 {
   "title": "Home Page",
-  "capture": "Home Page"
+  "capture": "Blog Page"
 }

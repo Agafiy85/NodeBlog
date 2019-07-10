@@ -7,22 +7,32 @@ html(lang='en')
         title Home page
         link( rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
         link( rel="stylesheet" href="/css/main.css")
     body
         div.container
            div.row
-               h1 #{mainheader}
+               
                 ul
                     li
                         a(href="/") Home
                             a(href="/contact") Contact
                                 a(href="/about") About
+                                    a(href="/blog") Blog
 
+        div.container
+            div.row                       
+                h1 #{mainheader}
 
-                                div.container
-                                     div.row
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Yarra_Night_Panorama%2C_Melbourne_-_Feb_2005.jpg" class="d-block w-100" alt="...">
-
-                                             div.row
+        div.container
+            
+                    div.row
                                                   
-                                                       input.form-control.search-slt(type='text' placeholder='Enter Email')
+                        form
+                        .form-group
+                            label(for='exampleInputEmail1') Username
+                            input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter email')
+                        .form-group
+                            label(for='exampleInputPassword1') Password
+                            input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                        button.btn.btn-primary(type='submit') Sing In

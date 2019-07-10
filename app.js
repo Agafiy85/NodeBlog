@@ -18,6 +18,9 @@ app.use(about);
 const contact = require('./routes/contact');
 app.use(contact);
 
+const blog = require('./routes/blog');
+app.use(blog);
+
 app.use((req, res, next) => {
 res.send('<h1>Not Found</h1>');
 });
