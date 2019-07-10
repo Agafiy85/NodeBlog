@@ -28,6 +28,11 @@ html(lang="en")
                             label(for='exampleInputEmail1') Post
                             input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Post')
                         .form-group
-                            label(for='exampleInputPassword1') Password
-                            input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-                        button.btn.btn-primary(type='submit') Sing In
+                            label(for='exampleInputEmail1') Author
+                            input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Author')
+                        select.custom-select.custom-select-lg.mb-3
+                            option(selected='') Category
+                            option(value='1') Moda
+                            option(value='2') Sport
+                            option(value='3') Cinema
+                        button.btn.btn-primary(type='submit') ADD
